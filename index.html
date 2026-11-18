@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Kollumi | Email Confirmation</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,Segoe UI,sans-serif}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 50% 15%,#123d73,#07152d 50%,#030916);color:#eff8ff;padding:24px}.panel{width:min(100%,440px);text-align:center;padding:50px 30px;border:2px solid #269bff;border-radius:20px;background:linear-gradient(155deg,#103a6a,#07182e 65%);box-shadow:0 0 25px #168bff66,inset 0 0 25px #0b73ce33}.diamond{margin:auto auto 22px;width:48px;height:48px;transform:rotate(45deg);border:3px solid #4edcff;background:linear-gradient(135deg,#1caeff,#063e89);box-shadow:0 0 20px #29c5ff}h1{font-size:clamp(28px,7vw,42px);letter-spacing:.12em;margin:0 0 18px;text-shadow:0 0 14px #45bfff}h2{font-size:23px;color:#8de8ff;margin:0 0 15px}p{line-height:1.65;color:#c7e2f5}small{display:block;margin-top:30px;color:#83a6c5}
+</style>
+</head>
+<body>
+<main class="panel">
+<div class="diamond" aria-hidden="true"></div>
+<h1>KOLLUMI</h1>
+<h2>Email confirmation</h2>
+<p>Your confirmation link has been processed. You can return to Kollumi and try signing in.</p>
+<p>If you cannot sign in, check your email verification status or request a new confirmation email.</p>
+<small>You may safely close this window.</small>
+</main>
+<script>
+// Supabase may redirect with session tokens in URL fragments. Remove them from
+// browser history immediately; this page never reads or transmits them.
+if(location.hash || location.search){history.replaceState(null,'',location.pathname);}
+</script>
+</body>
+</html>
